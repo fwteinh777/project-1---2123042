@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeClassifier
 
-dataset=pd.read_csv("dataset.csv")
+dataset=pd.read_csv(""https://raw.githubusercontent.com/fwteinh777/project-1---2123042/main/dataset.csv"")
 dataset=dataset.dropna()
 dataset=dataset[["price","type","floor","area","y_build","y_rebuild"]]
 dataset["floor"]=dataset["floor"].astype(int)
@@ -116,5 +116,6 @@ else:
  filtDataset["category"]=cl.predict(features)
  print("New column - classification:")
  print(filtDataset)
+
 
  
